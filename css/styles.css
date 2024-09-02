@@ -1,0 +1,118 @@
+:root {
+    --background-color: #f9f9f9;
+    --text-color: #333;
+    --primary-color: #4a90e2;
+    --hover-color: #357ab8;
+    --table-bg-color: #fff;
+    --table-border-color: #ddd;
+    --table-row-hover: #e9f4fd;
+    --delete-button-bg: #ff6b6b;
+    --delete-button-hover: #ff3b3b;
+}
+
+body.dark-mode {
+    --background-color: #1e1e1e;
+    --text-color: #e0e0e0;
+    --primary-color: #bb86fc;
+    --hover-color: #3700b3;
+    --table-bg-color: #2c2c2c;
+    --table-border-color: #444;
+    --table-row-hover: #3a3a3a;
+    --delete-button-bg: #cf6679;
+    --delete-button-hover: #b00020;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 80%;
+    max-width: 400px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid var(--table-border-color);
+    border-radius: 4px;
+    font-size: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+    transform: translateY(-2px);
+}
+
+table {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--table-bg-color);
+}
+
+th, td {
+    border: 1px solid var(--table-border-color);
+    padding: 12px;
+    text-align: center;
+    font-size: 1em;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+tr:nth-child(even) {
+    background-color: var(--table-bg-color);
+}
+
+tr:hover {
+    background-color: var(--table-row-hover);
+}
+
+button.delete {
+    padding: 8px 16px;
+    background-color: var(--delete-button-bg);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.delete:hover {
+    background-color: var(--delete-button-hover);
+    transform: translateY(-2px);
+}

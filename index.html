@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XD</title>
+    <script src="js/todoList.js" ></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>ToDo List</h1>
+    <button id="toggleMode">🌙</button>
+    <input type="text" id="task" placeholder="Add a task">
+    <button onclick="addTask()">Add Task</button>
+    <br>
+    <br>
+        <!-- Tabla para mostrar las tareas -->
+        <table id="taskTable" border="1">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+</body>
+</html>
